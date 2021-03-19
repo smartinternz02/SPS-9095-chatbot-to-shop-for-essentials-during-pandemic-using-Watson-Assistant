@@ -1,0 +1,1322 @@
+{
+  "intents": [
+    {
+      "intent": "enquiry",
+      "examples": [
+        {
+          "text": "4335"
+        },
+        {
+          "text": "Can you show me the menu?"
+        },
+        {
+          "text": "Choco"
+        },
+        {
+          "text": "Couples"
+        },
+        {
+          "text": "Menus"
+        },
+        {
+          "text": "Offer"
+        },
+        {
+          "text": "Offers"
+        },
+        {
+          "text": "Special offer"
+        },
+        {
+          "text": "What are extra items available?"
+        },
+        {
+          "text": "What are offers available"
+        },
+        {
+          "text": "What are the extra flavour available?"
+        },
+        {
+          "text": "What are the flavour of tea and coffee Available?"
+        },
+        {
+          "text": "What are the offers you are having?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greeting",
+      "examples": [
+        {
+          "text": "Ge"
+        },
+        {
+          "text": "Gm"
+        },
+        {
+          "text": "Good afternoon"
+        },
+        {
+          "text": "Good before night"
+        },
+        {
+          "text": "Good evening"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "Gud mrn"
+        },
+        {
+          "text": "Gud noon"
+        },
+        {
+          "text": "Hello sir/mam"
+        },
+        {
+          "text": "Welcome mam"
+        },
+        {
+          "text": "Welcome sir"
+        },
+        {
+          "text": "Welcome sir /mam"
+        },
+        {
+          "text": "yashwantsarathe832@gmail.com"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Order",
+      "examples": [
+        {
+          "text": "Can you place me an order"
+        },
+        {
+          "text": "I want to place an order"
+        },
+        {
+          "text": "Maggie"
+        },
+        {
+          "text": "Mocktails"
+        },
+        {
+          "text": "Pasta"
+        },
+        {
+          "text": "Please take the order"
+        },
+        {
+          "text": "Shake"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "\"[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$\">"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "enquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Beers flavour",
+          "synonyms": [
+            "Ber flavs"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Menu",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Offers",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Special enquities",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Special flavour",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Special items",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Special offer",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Greetingse",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Ge",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Gm",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Good afternoon",
+          "synonyms": [
+            "Gud aft"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good evening",
+          "synonyms": [
+            "Ge",
+            "Gud eve"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good morning",
+          "synonyms": [
+            "Gm",
+            "Gud mrn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good noon",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Gud aft",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Gud mrn",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Gud noon",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Items",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Chocolate tea",
+          "synonyms": [
+            "Choco"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Coffee",
+          "synonyms": [
+            "Black",
+            "Hot",
+            "Mouctache",
+            "Strong"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Cold coffee",
+          "synonyms": [
+            "Chocolate cold coffee",
+            "Chocolate cold coffee with ice cream",
+            "Cold coffee",
+            "Special cold coffee",
+            "Strong cold coffee"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Elaichi tea",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Frappee",
+          "synonyms": [
+            "Blueberry",
+            "Caramel",
+            "Hazelnut",
+            "Irish"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Ginger tea",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ice tea",
+          "synonyms": [
+            "Classic lemonade tea",
+            "Ice tea ",
+            "Lemon mint tea",
+            "Noisette tea",
+            "Peach tea"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Masala tea",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pan tea",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Rose tea",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tea",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "menu",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Chocolate tea",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Coffee",
+          "synonyms": [
+            "Black coffee",
+            "Chocolate coffee",
+            "Hot coffee",
+            "Moustache coffee",
+            "Strong chocolate coffee",
+            "Strong coffee"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Cold coffee",
+          "synonyms": [
+            "Chocolate cold coffee",
+            "Chocolate cold coffee with ice Cream",
+            "Cold coffee",
+            "Moustache cold coffee",
+            "Special cold coffee",
+            "Strong cold coffee"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Elaichi tea",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Frappe",
+          "synonyms": [
+            "Blueburry",
+            "Caramel",
+            "Hazelnut",
+            "Irish"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Ginger tea",
+          "synonyms": [
+            "Ginger tea",
+            "Masala tea ",
+            "Pan tea",
+            "Rose tea"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Ice tea",
+          "synonyms": [
+            "Classic lemonade tea",
+            "Ice tea",
+            "Lemon tea",
+            "Noisette tea",
+            "Peach tea"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Maggie",
+          "synonyms": [
+            "Cheese and butter maggie",
+            "Double masala maggie",
+            "Khadai maggie",
+            "Plain maggie",
+            "Punjabi tadka Maggie"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mocktail",
+          "synonyms": [
+            "Blue Lagoon mocktails",
+            "Caramel",
+            "Cheese Garlic bread",
+            "Cheese muska bun",
+            "Cheese shots",
+            "Choco fries",
+            "Choco muska bun",
+            "Coconut",
+            "Cucumbar mocktail",
+            "French fries",
+            "Garlic bun",
+            "Girlic bun",
+            "Grany apple mocktails",
+            "Irish",
+            "Loaded fries",
+            "Masala fries",
+            "Maska bun",
+            "Maska bun with jam",
+            "Minty maza",
+            "Passion Fruit",
+            "Peach",
+            "Potato fries",
+            "Rosy lips",
+            "Strawberry",
+            "Water melon blast"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pasta",
+          "synonyms": [
+            "Chatpata pasta",
+            "Khadai pasta",
+            "Makhani pasta",
+            "White pasta",
+            "Zeesy pasta"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sandwich",
+          "synonyms": [
+            "Chilli chatpatta",
+            "Chocolate sandwich",
+            "Corn.mayo sandwich",
+            "Crispy bhutta sandwich",
+            "Grilled veggies",
+            "Paneer takka tak",
+            "Spicy potato sandwich",
+            "Tandoori sandwich",
+            "Veg.mayo sandwich"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Shakes",
+          "synonyms": [
+            "Black current shake",
+            "Bourbon shake",
+            "Brownie shake",
+            "Butter scotch shake",
+            "Cadbury shake",
+            "Cadbury shake with ice cream",
+            "Ferrero Rocher shake",
+            "Khush shake",
+            "Kit kat shake",
+            "Kiwi shake",
+            "Litchi shake",
+            "Mango shake",
+            "Mix berry shake",
+            "Orange shake",
+            "Oreo shake",
+            "Oreo shake with ice cream",
+            "Pine apple shake",
+            "Pine colada shake",
+            "Sitafal shake",
+            "Strawberry shake"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Orders",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Order",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Payment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Card",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cash",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cash on delivary",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "COD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Credit Card",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UPI",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://www.fast2sms.com/dev/bulkV2",
+      "name": "main_webhook",
+      "headers": [
+        {
+          "name": "authorization",
+          "value": "Basic Og==S2tGAXCUQ8zF01YBiDeLm6VxNZhRrP49Ejf7sM3duWITkavbgKuOF6yrgYhPdHeRSnQZm3MKs9AwINic"
+        }
+      ]
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Can you reword your statement .i am not understanding"
+              },
+              {
+                "text": " I am chaibot .how can i help you?"
+              },
+              {
+                "text": "I didnot understand you can try rephrasing"
+              },
+              {
+                "text": "I didnot get your meaning"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_3_1615999677996",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1616002665018",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_10_1616002665021"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1616002831259",
+      "context": {
+        "Payment": "@Payment"
+      },
+      "conditions": "@Payment",
+      "event_name": "input",
+      "dialog_node": "handler_10_1616002831263"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_3_1615999677996",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1615999923837",
+      "previous_sibling": "node_7_1616003819279"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "We accpet COD, credit card,card,cash,cash on delivery"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1616002831259",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1616002831263",
+      "previous_sibling": "handler_10_1616002831263"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Can you provide me the item "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1615999924606",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1615999924654",
+      "previous_sibling": "handler_7_1615999924654"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "How many minutes do you want?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1616002665018",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1616002665021",
+      "previous_sibling": "handler_10_1616002665021"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1616002900741",
+      "context": {
+        "number_2": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_6_1616002900744"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1615999924606",
+      "context": {
+        "menu": "@menu"
+      },
+      "conditions": "@menu",
+      "event_name": "input",
+      "dialog_node": "handler_7_1615999924654"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Can you please give your contact number"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1616002900741",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1616002900744",
+      "previous_sibling": "handler_6_1616002900744"
+    },
+    {
+      "type": "standard",
+      "title": "Enquiry",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@enquiry || @enquiry",
+      "dialog_node": "node_10_1615920790187",
+      "previous_sibling": "node_2_1615916803736"
+    },
+    {
+      "type": "standard",
+      "title": "email",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you your email id is $email .How may i help you"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1615896908331",
+      "context": {
+        "email": "@email.literal"
+      },
+      "conditions": "@email",
+      "dialog_node": "node_1_1615981023777"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greeting && @Greetingse",
+      "dialog_node": "node_2_1615916803736",
+      "previous_sibling": "node_5_1615896908331"
+    },
+    {
+      "type": "frame",
+      "title": "Order",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you your order of  $menu of $number quantity is placed .please pay order with $payment .The invoice is sent $number_2"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@Orders || @Orders",
+      "dialog_node": "node_3_1615999677996",
+      "previous_sibling": "node_10_1615920790187"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello i am chai bot capable of offerings,placing order .How can i serve you? Can you provide your Gmail id for future reference."
+              },
+              {
+                "text": "Hello , how may i help you"
+              },
+              {
+                "text": "Hello, i am chai bar chatbot .May you need help in seeing order,menu of chai,coffee and non-alcoholic beers.what do you want me do?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#Greeting",
+      "dialog_node": "node_5_1615896908331"
+    },
+    {
+      "type": "standard",
+      "title": "message node",
+      "parent": "node_3_1615999677996",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "route": "s",
+            "number": "$number_2",
+            "message": "Thank you your order of  $menu of $number quantity is placed .please pay order with $payment .The invoice is sent $number_2",
+            "language": "english",
+            "sender_id": "FSTSMS"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1616003819279"
+      },
+      "conditions": "true",
+      "dialog_node": "node_5_1616007343872"
+    },
+    {
+      "type": "standard",
+      "title": "Foodies",
+      "parent": "node_10_1615920790187",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Items",
+      "dialog_node": "node_7_1615926168237"
+    },
+    {
+      "type": "standard",
+      "title": "Deleting context variable",
+      "parent": "node_3_1615999677996",
+      "conditions": "true",
+      "dialog_node": "node_7_1616003819279",
+      "previous_sibling": "node_5_1616007343872"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good afternoon,how can i help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1615916803736",
+      "conditions": "@Greetingse:(Good afternoon)",
+      "dialog_node": "response_1_1615918364374",
+      "previous_sibling": "response_6_1615917260789"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              },
+              {
+                "text": "19%off on beverages"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "10%off on visa debit card"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "12%off for couples"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "5%off for single buddies"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1615920790187",
+      "conditions": "@enquiry:Offers",
+      "dialog_node": "response_1_1615923556368",
+      "previous_sibling": "response_7_1615921188795"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Rochar shake",
+                "value": {
+                  "input": {
+                    "text": "Shake wala"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Maggie ",
+                "value": {
+                  "input": {
+                    "text": "Schezwan"
+                  }
+                }
+              },
+              {
+                "label": "Pasta",
+                "value": {
+                  "input": {
+                    "text": "Chalpata"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Cold coffe with ice-cream",
+                "value": {
+                  "input": {
+                    "text": "Chocolate cold coffee"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1615920790187",
+      "conditions": "@enquiry:(Special flavour)",
+      "dialog_node": "response_4_1615923935426",
+      "previous_sibling": "response_1_1615923556368"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Mocktails are beers"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1615920790187",
+      "conditions": "@enquiry:(Beers flavour)",
+      "dialog_node": "response_4_1615924751477",
+      "previous_sibling": "response_4_1615923935426"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              },
+              {
+                "text": "Frappes"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Beers my dear ohh! Beer"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1615920790187",
+      "conditions": "@enquiry:(Special enquities)",
+      "dialog_node": "response_5_1615924810025",
+      "previous_sibling": "response_4_1615924751477"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1616007343872",
+      "conditions": "anything_else",
+      "dialog_node": "response_5_1616007426860",
+      "previous_sibling": "response_6_1616007421238"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good morning,how can i help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1615916803736",
+      "conditions": "@Greetingse:(Good morning)",
+      "dialog_node": "response_6_1615917260789"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Pasta +Maggie",
+            "source": "https://img-global.cpcdn.com/recipes/49f0b9556453af4b/1280x1280sq70/photo.webp",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_10_1615920790187",
+      "conditions": "@enquiry:(Special items)",
+      "dialog_node": "response_6_1615924981315",
+      "previous_sibling": "response_5_1615924810025"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Choco"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "Late tea choco"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1615926168237",
+      "conditions": "@Items:(Chocolate tea)",
+      "dialog_node": "response_6_1615926637548"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "message sent"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1616007343872",
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_6_1616007421238"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is the menu we offer"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "@enquiry",
+            "source": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/6/c/v/m6399-15746645515ddb7967e66fb.jpg?tr=tr:n-large",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "So, this is the menu we offer"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1615920790187",
+      "conditions": "@enquiry:Menu",
+      "dialog_node": "response_7_1615921188795",
+      "previous_sibling": "node_7_1615926168237"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1615926168237",
+      "dialog_node": "response_7_1615927048264",
+      "previous_sibling": "response_9_1615926900771"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good evening,how can i help you? Bhi"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1615916803736",
+      "conditions": "@Greetingse:(Good evening)",
+      "dialog_node": "response_8_1615918397691",
+      "previous_sibling": "response_1_1615918364374"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello ,how may i assist you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1615916803736",
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1615919560019",
+      "previous_sibling": "response_8_1615918397691"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please note order of this"
+              },
+              {
+                "text": "Order this one please"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_7_1615926168237",
+      "conditions": "@Items",
+      "dialog_node": "response_9_1615926900771",
+      "previous_sibling": "response_6_1615926637548"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1615999677996",
+      "variable": "$menu",
+      "dialog_node": "slot_10_1615999924606",
+      "previous_sibling": "handler_1_1615999923837"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1615999677996",
+      "variable": "$number",
+      "dialog_node": "slot_2_1616002665018",
+      "previous_sibling": "slot_10_1615999924606"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1615999677996",
+      "variable": "$Payment",
+      "dialog_node": "slot_2_1616002831259",
+      "previous_sibling": "slot_2_1616002665018"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1615999677996",
+      "variable": "$number_2",
+      "dialog_node": "slot_7_1616002900741",
+      "previous_sibling": "slot_2_1616002831259"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Chai sutta cavity bar",
+  "language": "en",
+  "description": ""
+}
